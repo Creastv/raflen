@@ -1,0 +1,63 @@
+.h-middle {
+  // position: absolute;
+
+  width: 100%;
+  .h-middle__wrap {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 16px 50px;
+    @media #{$sm} {
+      gap: 10px;
+      padding: 16px 15px;
+    }
+    @media #{$xs} {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  .h-buttons {
+    @media #{$xs} {
+      order: 4;
+      width: 100%;
+    }
+    a {
+      white-space: nowrap;
+
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
+    .btn-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      font-size: 21px;
+
+      svg {
+        path {
+          fill: none;
+        }
+      }
+    }
+  }
+  .h-nav {
+    @media #{$xs} {
+      order: 5;
+    }
+  }
+  .navbar__brand {
+    flex: auto;
+    @media #{$xs} {
+    }
+    a {
+      img {
+        @media #{$sm} {
+          max-width: 180px;
+          // width: 100%;
+        }
+      }
+    }
+  }
+}

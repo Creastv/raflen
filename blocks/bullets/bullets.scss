@@ -1,0 +1,10 @@
+@import "../../src/scss/variable";
+@import "../../src/scss/bullets";
+
+.acf-block-preview {
+  .b-bullets {
+    width: 100% !important;
+    left: 0px !important;
+    margin-left: 0px !important;
+  }
+}

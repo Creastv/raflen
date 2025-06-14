@@ -1,0 +1,145 @@
+.form-lp {
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  .form-lp__header {
+    background-color: var(--main);
+    padding: 15px;
+    text-align: center;
+    p {
+      color: var(--white);
+      margin-bottom: 0;
+      font-size: 21px;
+      font-weight: 500;
+    }
+  }
+  .form-lp__form {
+    padding: 20px;
+  }
+}
+.form-lp__header {
+  background-color: red;
+}
+input,
+textarea,
+select {
+  margin: 0px !important;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  background-color: rgba(#d9d9d9, 0.2);
+  border-radius: 3px;
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+}
+.wpcf7-form-control-wrap {
+  display: block;
+  margin-bottom: 15px;
+}
+.wpcf7-acceptance {
+  input {
+    width: initial;
+  }
+  .wpcf7-list-item {
+    margin: 0;
+  }
+}
+label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.wpcf7-submit {
+  background-color: var(--main) !important;
+  border-radius: 100px;
+  width: 100%;
+}
+.wpcf7-spinner {
+  position: absolute;
+  z-index: 33;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wpcf7-submit {
+  background: #018601;
+  background: linear-gradient(
+    94deg,
+    rgba(1, 134, 1, 1) 0%,
+    rgba(0, 189, 0, 1) 100%
+  );
+  border: 1px solid var(--main) !important;
+  color: var(--white);
+  font-weight: 500 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: none;
+  border-radius: 6px !important;
+  cursor: pointer;
+  width: 100%;
+  // max-width: 200px;
+  margin-top: 20px !important;
+  @media #{$sm} {
+    max-width: 100%;
+  }
+}
+
+.form-wrap .group-form.text-center .wpcf7-submit {
+  margin: 0 auto !important;
+}
+
+.form-wrap--partner {
+  margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+}
+
+.wpcf7-not-valid-tip {
+  position: absolute;
+  color: #dc3232;
+  font-size: 9px;
+  font-weight: normal;
+  display: block;
+  // padding: 5px;
+}
+
+.wpcf7-response-output {
+  font-size: 12px;
+}
+
+.go-zgoda {
+  label {
+    display: flex;
+    font-size: 12px;
+  }
+  .wpcf7-list-item-label {
+    display: none !important;
+  }
+  .wpcf7-not-valid-tip {
+    position: absolute;
+    width: 100vw;
+    bottom: -30px;
+  }
+}
+#consent-toggle {
+  font-weight: 500;
+}
+
+.codedropz-upload-container {
+  padding: 10px !important ;
+  h3,
+  * {
+    font-size: 12px !important;
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../src/scss/variable";
+@import "../../src/scss/service";
+.top-8 {
+  margin-top: -80px;
+  @media #{$sm} {
+    margin-top: -15px;
+  }
+}
+.acf-block-preview {
+  .top-8 {
+    margin-top: 0px !important;
+  }
+}

@@ -1,0 +1,43 @@
+// Error 404
+.error404 {
+  .entry-title {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+#error {
+  padding: 0 0 50px 0;
+}
+
+.entry-content-wraper {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
+  .entry-content {
+    width: 70%;
+    @media #{$sm} {
+      width: 100%;
+    }
+  }
+  .entry-content-form {
+    width: 30%;
+    @media #{$sm} {
+      width: 100%;
+    }
+    .entry-content-form__wrap {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 50px;
+      margin-top: -320px;
+
+      // padding: 20px;
+      @media #{$sm} {
+        margin-top: 0;
+      }
+    }
+  }
+}

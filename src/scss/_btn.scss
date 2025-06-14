@@ -1,0 +1,110 @@
+.btn-main {
+  padding: 8px 16px;
+  background: #018601;
+  background: linear-gradient(
+    94deg,
+    rgba(1, 134, 1, 1) 0%,
+    rgba(0, 189, 0, 1) 100%
+  );
+  border: 1px solid var(--main) !important;
+  color: var(--white) !important;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s linear;
+  @media #{$sm} {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  span {
+    color: var(--white) !important;
+    vertical-align: middle;
+    display: inline-block;
+    transition: all 0.3s linear;
+  }
+  svg {
+    display: flex;
+    vertical-align: middle;
+    path {
+      fill: var(--white);
+    }
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active,
+  &:focus,
+  &:visited {
+    opacity: 1;
+  }
+}
+
+.btn-rev {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--main) !important;
+  color: var(--main) !important;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s linear;
+  @media #{$sm} {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  span {
+    transition: all 0.3s linear;
+  }
+  &:hover {
+    background: #018601;
+    background: linear-gradient(
+      94deg,
+      rgba(1, 134, 1, 1) 0%,
+      rgba(0, 189, 0, 1) 100%
+    );
+    color: var(--white) !important;
+    // opacity: 0.8;
+  }
+}
+
+.btn-rev-white {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--white) !important;
+  color: var(--white) !important;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s linear;
+  @media #{$sm} {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  span {
+    transition: all 0.3s linear;
+  }
+  &:hover {
+    border: 1px solid var(--main) !important;
+    background: #018601;
+    background: linear-gradient(
+      94deg,
+      rgba(1, 134, 1, 1) 0%,
+      rgba(0, 189, 0, 1) 100%
+    );
+    color: var(--white) !important;
+    // opacity: 0.8;
+  }
+}
