@@ -5,6 +5,9 @@
   .swiper-slide {
     height: 70vh;
     width: 100%;
+    @media #{$xs} {
+      height: 60vh;
+    }
     .b-slider-conent__wrap {
       display: flex;
       justify-content: space-between;
@@ -104,19 +107,24 @@
     }
     @media #{ $sm} {
       transform: translate(15px, -20px);
+      bottom: 25px;
     }
     span {
-      width: 15px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       background-color: var(--white);
-      opacity: 1;
+      opacity: 0.3;
       transition: all 0.3s ease;
+      &:hover {
+        opacity: 1;
+      }
       @media #{ $sm} {
         width: 10px;
         height: 10px;
       }
     }
     .swiper-pagination-bullet-active {
+      opacity: 1;
       background-color: var(--main);
       width: 50px;
       border-radius: 100px;

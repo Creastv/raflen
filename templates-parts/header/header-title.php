@@ -23,89 +23,87 @@ if (is_category()) {
 }
 ?>
 <?php if (is_home()) : ?>
-<?php
+    <?php
     $customTitle = get_field('custom_title', get_option('page_for_posts'));
     ?>
-<header class="entry-header text-center" data-aos="fade-up">
-    <div class="container">
-        <div class="entry-header__wrap">
-            <?php if (!empty($customTitle['title'])): ?>
-            <?php if (!empty($customTitle['label'])): ?>
-            <span class="entry-label entry-label--archive"><?php echo $customTitle['label']; ?></span>
-            <?php endif; ?>
-            <h1 class="entry-title  entry-title--archive big-title ">
-                <?php echo $customTitle['title']; ?>
-            </h1>
-            <?php else : ?>
-            <span class="entry-label entry-label--archive"><?php echo _e('Aktulności', 'go'); ?></span>
-            <h1><?php echo _e('Aktulności', 'go'); ?></h1>
-            <?php endif; ?>
-            <?php if (!empty($customTitle['description'])): ?>
-            <div class="entry-desc entry-desc--archive">
-                <?php echo $customTitle['description']; ?>
+    <header class="entry-header text-center" data-aos="fade-up">
+        <div class="container">
+            <div class="entry-header__wrap">
+                <?php if (!empty($customTitle['title'])): ?>
+                    <?php if (!empty($customTitle['label'])): ?>
+                        <span class="entry-label entry-label--archive"><?php echo $customTitle['label']; ?></span>
+                    <?php endif; ?>
+                    <h1 class="entry-title  entry-title--archive big-title ">
+                        <?php echo $customTitle['title']; ?>
+                    </h1>
+                <?php else : ?>
+                    <span class="entry-label entry-label--archive"><?php echo _e('Aktulności', 'go'); ?></span>
+                    <h1><?php echo _e('Aktulności', 'go'); ?></h1>
+                <?php endif; ?>
+                <?php if (!empty($customTitle['description'])): ?>
+                    <div class="entry-desc entry-desc--archive">
+                        <?php echo $customTitle['description']; ?>
+                    </div>
+                <?php endif; ?>
+                <?php // get_template_part('templates-parts/parts/categorys');  
+                ?>
+                <br>
             </div>
-            <?php endif; ?>
-            <?php // get_template_part('templates-parts/parts/categorys');  
-                ?>
-            <br>
-            <br>
         </div>
-    </div>
-</header>
+    </header>
 <?php elseif (is_category()): ?>
-<header class="entry-header text-center" data-aos="fade-up">
-    <div class="container">
-        <div class="entry-header__wrap">
-            <span class="entry-label entry-label--archive"><?php echo single_cat_title(); ?></span>
-            <h1 class="entry-title  entry-title--archive big-title "><?php echo single_cat_title(); ?></h1>
-            <?php the_archive_description('<div class="entry-desc entry-desc--archive">', '</div>'); ?>
-            <?php // get_template_part('templates-parts/parts/categorys');  
+    <header class="entry-header text-center" data-aos="fade-up">
+        <div class="container">
+            <div class="entry-header__wrap">
+                <span class="entry-label entry-label--archive"><?php echo single_cat_title(); ?></span>
+                <h1 class="entry-title  entry-title--archive big-title "><?php echo single_cat_title(); ?></h1>
+                <?php the_archive_description('<div class="entry-desc entry-desc--archive">', '</div>'); ?>
+                <?php // get_template_part('templates-parts/parts/categorys');  
                 ?>
-            <br>
-            <br>
+                <br>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
 <?php elseif (is_tag()): ?>
-<header class="entry-header text-center" data-aos="fade-up">
-    <div class="container">
-        <div class="entry-header__wrap">
-            <h1 class="entry-title  entry-title--archive big-title "><?php echo single_tag_title(); ?></h1>
-            <?php the_archive_description('<div class="entry-desc entry-desc--archive">', '</div>'); ?>
+    <header class="entry-header text-center" data-aos="fade-up">
+        <div class="container">
+            <div class="entry-header__wrap">
+                <h1 class="entry-title  entry-title--archive big-title "><?php echo single_tag_title(); ?></h1>
+                <?php the_archive_description('<div class="entry-desc entry-desc--archive">', '</div>'); ?>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 <?php elseif (is_search()): ?>
-<header class="entry-header text-center" data-aos="fade-up">
-    <div class="container">
-        <div class="entry-header__wrap">
-            <span class="entry-label entry-label--archive"><?php echo _e('Wyniki', 'go'); ?></span>
-            <h1 class="entry-title  entry-title--archive big-title "><?php echo _e('Wyniki wyszukiwania', 'go'); ?></h1>
-            <p>Wyniki dla: <strong><?php echo get_search_query(); ?></strong></p>
-            <?php // get_search_form(); 
+    <header class="entry-header text-center" data-aos="fade-up">
+        <div class="container">
+            <div class="entry-header__wrap">
+                <span class="entry-label entry-label--archive"><?php echo _e('Wyniki', 'go'); ?></span>
+                <h1 class="entry-title  entry-title--archive big-title "><?php echo _e('Wyniki wyszukiwania', 'go'); ?></h1>
+                <p>Wyniki dla: <strong><?php echo get_search_query(); ?></strong></p>
+                <?php // get_search_form(); 
                 ?>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 <?php else: ?>
 
-<?php if ($title === null || $title) {  ?>
-<header class="entry-header" data-aos="fade-up">
-    <div class="container">
-        <div class="entry-header__wrap">
-            <?php if (!empty($customTitle['label']) && $title): ?>
-            <span class="entry-label"><?php echo $customTitle['label']; ?></span>
-            <?php else: ?>
-            <span class="entry-label">Warszawa i okolice</span>
-            <?php endif; ?>
-            <?php if (!empty($customTitle['title']) && $title): ?>
-            <h1 class="entry-title big-title">
-                <?php echo $customTitle['title']; ?>
-            </h1>
-            <?php else : ?>
-            <h1 class="entry-title big-title">
-                <?php if (is_category()) :
+    <?php if ($title === null || $title) {  ?>
+        <header class="entry-header" data-aos="fade-up">
+            <div class="container">
+                <div class="entry-header__wrap">
+                    <?php if (!empty($customTitle['label']) && $title): ?>
+                        <span class="entry-label"><?php echo $customTitle['label']; ?></span>
+                    <?php else: ?>
+                        <span class="entry-label">Warszawa i okolice</span>
+                    <?php endif; ?>
+                    <?php if (!empty($customTitle['title']) && $title): ?>
+                        <h1 class="entry-title big-title">
+                            <?php echo $customTitle['title']; ?>
+                        </h1>
+                    <?php else : ?>
+                        <h1 class="entry-title big-title">
+                            <?php if (is_category()) :
                                 single_cat_title();
                             elseif (is_tax()) :
                                 single_tag_title();
@@ -132,29 +130,29 @@ if (is_category()) {
                             elseif (is_tax('post_format', 'post-format-link')) :
                                 _e('Links', 'go');
                             endif; ?>
-            </h1>
-            <?php endif; ?>
+                        </h1>
+                    <?php endif; ?>
 
-            <?php if (!empty($customTitle['description']) && $title): ?>
-            <div class="entry-desc">
-                <?php echo $customTitle['description']; ?>
+                    <?php if (!empty($customTitle['description']) && $title): ?>
+                        <div class="entry-desc">
+                            <?php echo $customTitle['description']; ?>
+                        </div>
+                    <?php endif; ?>
+
+                </div>
+                <?php if (!empty($bg)) : ?>
+                    <div class="img">
+                        <img src="<?php echo esc_url($bg); ?>" alt="<?php esc_attr_e('Tło nagłówka', 'go'); ?>"
+                            class="header-image go-parallex" />
+                    </div>
+                <?php endif; ?>
             </div>
-            <?php endif; ?>
-
+        </header>
+        <div data-aos="fade-up" data-aos-delay="150">
+            <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
         </div>
-        <?php if (!empty($bg)) : ?>
-        <div class="img">
-            <img src="<?php echo esc_url($bg); ?>" alt="<?php esc_attr_e('Tło nagłówka', 'go'); ?>"
-                class="header-image go-parallex" />
-        </div>
-        <?php endif; ?>
-    </div>
-</header>
-<div data-aos="fade-up" data-aos-delay="150">
-    <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
-</div>
 
-<?php } ?>
+    <?php } ?>
 
 
 <?php endif; ?>

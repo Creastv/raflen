@@ -1,7 +1,7 @@
 </div>
 </main>
-<?php get_template_part('templates-parts/parts/footer-extra');
-?>
+<?php get_template_part('templates-parts/parts/footer-extra'); ?>
+<?php get_template_part('templates-parts/parts/slider-services'); ?>
 <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
     <?php get_template_part('templates-parts/footer/footer', 'seo'); ?>
     <?php get_template_part('templates-parts/footer/footer', 'info'); ?>

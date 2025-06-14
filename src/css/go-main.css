@@ -670,6 +670,7 @@ img {
 .no-title .entry-header .entry-header__wrap {
   margin-top: 50px !important;
   margin-bottom: 0;
+  width: 100% !important;
 }
 .no-title .search-toggle path {
   fill: var(--black);
@@ -2578,6 +2579,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 .b-bullets .b-bullet p {
   font-size: 14px;
+}
+
+.b-service h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .service-recom {
