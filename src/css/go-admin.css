@@ -397,11 +397,21 @@ img {
   position: relative;
   background-color: var(--black);
 }
+@media only screen and (max-width: 460px) {
+  #footer {
+    padding-bottom: 100px;
+  }
+}
 #footer .f-info_nav ul li {
   margin: 0;
 }
 #footer .f-info_nav ul li a {
   color: var(--white);
+}
+@media only screen and (max-width: 460px) {
+  #footer .f-info_nav ul li a {
+    font-size: 10px;
+  }
 }
 #footer .f-info_nav ul li a:hover {
   color: var(--main);

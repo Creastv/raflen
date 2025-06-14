@@ -37,6 +37,8 @@ body.blog {
     margin-bottom: 20px;
     @media #{$xs} {
       display: block !important;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     &:before {
@@ -54,6 +56,8 @@ body.blog {
       padding-right: 20px;
       @media #{$sm} {
         font-size: 1.75em;
+        padding-left: 0;
+        padding-right: 0;
       }
     }
     .rank-math-breadcrumb {

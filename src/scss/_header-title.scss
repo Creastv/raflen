@@ -26,8 +26,9 @@
     margin: 100px 0;
     width: 65%;
 
-    @media #{$xs} {
+    @media #{$sm} {
       padding: 0;
+      width: 100%;
     }
   }
   .entry-label {
