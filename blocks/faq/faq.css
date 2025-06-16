@@ -112,4 +112,7 @@
 .faq .accordion.active .answer {
   height: auto;
   padding: 0 24px 24px;
+}
+.faq ul li p {
+  margin-bottom: 0;
 }/*# sourceMappingURL=faq.css.map */
