@@ -2653,6 +2653,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin-bottom: 10px;
   font-size: 12px;
 }
+.service-recom .service-cart ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.service-recom .service-cart ul li {
+  margin: 0;
+  margin-left: 25px;
+}
 .service-recom .service-cart .btn-rev {
   position: absolute;
   bottom: 10px;
