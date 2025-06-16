@@ -18,7 +18,7 @@ $link_url2 = get_theme_mod('widget-link-url-3');
                 <h5><?php echo $title; ?></h5>
             <?php endif; ?>
             <?php if ($phone) : ?>
-                <a href="tel:+48 539 994 004" class="phone"><?php echo $phone; ?></a>
+                <a href="tel:<?php echo $phone; ?>" class="phone"><?php echo $phone; ?></a>
                 <span class="label">LUB</span>
             <?php endif; ?>
 
