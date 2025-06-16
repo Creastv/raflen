@@ -105,14 +105,14 @@
       padding: 0 24px 24px;
     }
   }
-  ul {
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    @media #{$lg} {
-      columns: 2;
-      -webkit-columns: 2;
-      -moz-columns: 2;
-    }
-  }
+  // ul {
+  //   columns: 3;
+  //   -webkit-columns: 3;
+  //   -moz-columns: 3;
+  //   @media #{$lg} {
+  //     columns: 2;
+  //     -webkit-columns: 2;
+  //     -moz-columns: 2;
+  //   }
+  // }
 }

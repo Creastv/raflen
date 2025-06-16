@@ -112,16 +112,4 @@
 .faq .accordion.active .answer {
   height: auto;
   padding: 0 24px 24px;
-}
-.faq ul {
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-}
-@media only screen and (max-width: 1300px) {
-  .faq ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-  }
 }/*# sourceMappingURL=faq.css.map */
