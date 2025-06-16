@@ -134,3 +134,9 @@ function generate_slug($string)
 {
     return sanitize_title($string);
 }
+
+function enable_excerpt_for_pages()
+{
+    add_post_type_support('page', 'excerpt');
+}
+add_action('init', 'enable_excerpt_for_pages');
