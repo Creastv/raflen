@@ -107,6 +107,8 @@ if (is_category()) {
                                 single_cat_title();
                             elseif (is_tax()) :
                                 single_tag_title();
+                            elseif (is_singular('realizacje')) :
+                                the_title();
                             elseif (is_page()) :
                                 the_title();
                             elseif (is_author()) :

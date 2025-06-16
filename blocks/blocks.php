@@ -103,6 +103,23 @@ function register_acf_block_types()
     },
   ));
   acf_register_block_type(array(
+    'name'              => 'realizacje-b',
+    'title'             => __('Relalizacje'),
+    'render_template'   => 'blocks/realizacje/realizacje.php',
+    'category'          => 'formatting',
+    'icon' => array(
+      'background' => '#c80100',
+      'foreground' => '#fff',
+      'src' => 'ellipsis',
+    ),
+    'mode'            => 'preview',
+    'keywords'          => array('realizacje'),
+    'supports' => array('align' => false),
+    'enqueue_assets'    => function () {
+      wp_enqueue_style('go-realizacje',  get_template_directory_uri() . '/blocks/realizacje/realizacje.min.css');
+    },
+  ));
+  acf_register_block_type(array(
     'name'              => 'bullets',
     'title'             => __('Bullets'),
     'render_template'   => 'blocks/bullets/bullets.php',
