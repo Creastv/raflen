@@ -3511,8 +3511,11 @@ label {
   justify-content: flex-end;
 }
 .sticker .sticker__wrap .sticker__content .sticker__content__top .close {
+  position: absolute;
+  right: 6px;
+  top: 3px;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 500;
 }
 .sticker .sticker__wrap .sticker__content .sticker__content__top svg {
@@ -3541,7 +3544,7 @@ label {
   font-optical-sizing: auto;
   text-align: center;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 21px;
   margin-bottom: 10;
 }
 .sticker .sticker__wrap .sticker__content p {

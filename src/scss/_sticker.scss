@@ -52,8 +52,11 @@
         align-items: flex-end;
         justify-content: flex-end;
         .close {
+          position: absolute;
+          right: 6px;
+          top: 3px;
           cursor: pointer;
-          font-size: 21px;
+          font-size: 18px;
           font-weight: 500;
         }
         svg {
@@ -83,7 +86,7 @@
         font-optical-sizing: auto;
         text-align: center;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 21px;
         margin-bottom: 10;
       }
       p {

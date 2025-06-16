@@ -50,8 +50,8 @@ $link_url2 = get_theme_mod('widget-link-url-3');
     <div class="stickier-mobile__wrap">
         <p>Potrzebujesz pomocy?</p>
         <div class="sticker-mobile__con">
-            <a href="#" class="btn-rev">Napisz do nas</a>
-            <a href="#" class="btn-main">+48 502 281 186</a>
+            <a href="/kontakt" class="btn-rev">Napisz do nas</a>
+            <a href="tel:0048502281186" class="btn-main">+48 502 281 186</a>
         </div>
     </div>
 </div>
